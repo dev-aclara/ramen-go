@@ -17,3 +17,13 @@ Broth.create([
     image_inactive: 'https://tech.redventures.com.br/icons/salt/inactive.svg'
   }
 ])
+
+Protein.create([
+  {
+    name: 'Chasu',
+    description: 'A sliced flavourful pork meat with a selection of season vegetables.',
+    price: 10,
+    image_active: 'https://tech.redventures.com.br/icons/chicken/active.svg',
+    image_inactive: 'https://tech.redventures.com.br/icons/chicken/inactive.svg'
+  }
+])

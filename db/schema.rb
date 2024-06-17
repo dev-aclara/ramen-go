@@ -10,8 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_06_17_010153) do
+ActiveRecord::Schema[7.1].define(version: 2024_06_17_013040) do
   create_table "broths", force: :cascade do |t|
+    t.string "name", null: false
+    t.string "description"
+    t.decimal "price", precision: 10, scale: 2, null: false
+    t.string "image_active", null: false
+    t.string "image_inactive", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "proteins", force: :cascade do |t|
     t.string "name", null: false
     t.string "description"
     t.decimal "price", precision: 10, scale: 2, null: false
