@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_06_17_013040) do
+ActiveRecord::Schema[7.1].define(version: 2024_06_17_024253) do
   create_table "broths", force: :cascade do |t|
     t.string "name", null: false
     t.string "description"
@@ -19,6 +19,17 @@ ActiveRecord::Schema[7.1].define(version: 2024_06_17_013040) do
     t.string "image_inactive", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "orders", force: :cascade do |t|
+    t.integer "broth_id", null: false
+    t.integer "protein_id", null: false
+    t.string "description"
+    t.string "image"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["broth_id"], name: "index_orders_on_broth_id"
+    t.index ["protein_id"], name: "index_orders_on_protein_id"
   end
 
   create_table "proteins", force: :cascade do |t|
@@ -31,4 +42,6 @@ ActiveRecord::Schema[7.1].define(version: 2024_06_17_013040) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "orders", "broths"
+  add_foreign_key "orders", "proteins"
 end
