@@ -1,25 +1,12 @@
-# README
+# ramenGO!
+-  This API allows users to list available broths, available proteins and place an order.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# [GET] /broths
+![image](https://github.com/dev-aclara/ramen-go/assets/57874018/e47cbafb-285f-4c4a-b968-607e7e078d04)
 
-Things you may want to cover:
+# [GET] /proteins
+![image](https://github.com/dev-aclara/ramen-go/assets/57874018/860c0737-61bb-4e76-81e7-a9a95f74e39a)
 
-* Ruby version
+# [POST] /orders
+![image](https://github.com/dev-aclara/ramen-go/assets/57874018/a0aa87f4-b9de-4173-8f3a-646bb27376a3)
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# ramen-go
